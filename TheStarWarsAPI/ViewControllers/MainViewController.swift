@@ -22,12 +22,11 @@ enum Link {
 }
 
 final class MainViewController: UIViewController {
-
-    private var swInfo: StarWarsCharactersInfo!
-
+    
+    private var swInfo2: StarWarsCharactersInfo!
     // MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "showInfo" {
+        if segue.identifier == "showCharacter" {
             guard let infoVC = segue.destination as? InfoTableViewController else { return }
             infoVC.fetchCharacter()
         }

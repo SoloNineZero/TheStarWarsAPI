@@ -14,8 +14,7 @@ struct Character: Codable {
     let hair_color: String
     let eye_color: String
     let gender: String
-//    let starships: [String]
-//
+
     var description: String {
         return """
             height: \(height)
