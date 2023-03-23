@@ -16,6 +16,7 @@
 		A8B8B29A29CC9B82004FAB3D /* InfoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B8B29929CC9B82004FAB3D /* InfoTableViewController.swift */; };
 		A8B8B29D29CC9C8B004FAB3D /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B8B29C29CC9C8B004FAB3D /* Character.swift */; };
 		A8B8B29F29CC9C9D004FAB3D /* Starship.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B8B29E29CC9C9D004FAB3D /* Starship.swift */; };
+		A8B8B2A229CCA30B004FAB3D /* InfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B8B2A129CCA30B004FAB3D /* InfoTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		A8B8B29929CC9B82004FAB3D /* InfoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoTableViewController.swift; sourceTree = "<group>"; };
 		A8B8B29C29CC9C8B004FAB3D /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
 		A8B8B29E29CC9C9D004FAB3D /* Starship.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Starship.swift; sourceTree = "<group>"; };
+		A8B8B2A129CCA30B004FAB3D /* InfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 		A85B992F29CC9AFC000073DA /* TheStarWarsAPI */ = {
 			isa = PBXGroup;
 			children = (
+				A8B8B2A029CCA2EC004FAB3D /* Views */,
 				A8B8B29B29CC9C79004FAB3D /* Models */,
 				A85B994429CC9B12000073DA /* App */,
 				A85B994529CC9B19000073DA /* ViewControllers */,
@@ -106,6 +109,14 @@
 				A8B8B29E29CC9C9D004FAB3D /* Starship.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		A8B8B2A029CCA2EC004FAB3D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A8B8B2A129CCA30B004FAB3D /* InfoTableViewCell.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -183,6 +194,7 @@
 				A85B993129CC9AFC000073DA /* AppDelegate.swift in Sources */,
 				A8B8B29D29CC9C8B004FAB3D /* Character.swift in Sources */,
 				A8B8B29F29CC9C9D004FAB3D /* Starship.swift in Sources */,
+				A8B8B2A229CCA30B004FAB3D /* InfoTableViewCell.swift in Sources */,
 				A85B993329CC9AFC000073DA /* SceneDelegate.swift in Sources */,
 				A8B8B29A29CC9B82004FAB3D /* InfoTableViewController.swift in Sources */,
 			);
