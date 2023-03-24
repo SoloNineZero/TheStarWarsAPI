@@ -17,12 +17,3 @@ struct Starship: Codable {
 struct StarWarsStarshipInfo: Decodable {
     let results: [Starship]
 }
-
-extension Starship {
-    enum CodingKeys: String, CodingKey {
-        case name = "name"
-        case model = "model"
-        case manufacturer = "manufacturer"
-        case costInCredits = "cost_in_credits"
-    }
-}

@@ -7,20 +7,20 @@
 
 import Foundation
 
-struct Character: Codable {
+struct Character: Decodable {
     let name: String
     let height: String
     let mass: String
-    let hair_color: String
-    let eye_color: String
+    let hairColor: String
+    let eyeColor: String
     let gender: String
 
     var description: String {
         return """
             height: \(height)
             mass: \(mass)
-            hair color: \(hair_color)
-            eye color: \(eye_color)
+            hair color: \(hairColor)
+            eye color: \(eyeColor)
             gender: \(gender)
             """
     }

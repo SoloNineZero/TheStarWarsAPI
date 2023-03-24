@@ -10,9 +10,11 @@ import UIKit
 final class InfoTableViewController: UITableViewController {
 
     private var characters: [Character] = []
+    private let networkManager = NetworkManager.shared
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        fetchCharacter()
     }
 
     // MARK: - Table view data source
@@ -29,17 +31,30 @@ final class InfoTableViewController: UITableViewController {
         return cell
     }
 }
-
+//MARK: - Private functions
 extension InfoTableViewController {
+//    private func fetchCharacter() {
+//        networkManager.fetch(StarWarsCharactersInfo.self, from: Link.apiCharacterURL.url) { [weak self] result in
+//            switch result {
+//            case .success(let characters):
+//                self?.characters = characters.results
+//                self?.tableView.reloadData()
+//            case .failure(let error):
+//                print(error)
+//            }
+//        }
+//    }
+    
     func fetchCharacter() {
         URLSession.shared.dataTask(with: Link.apiCharacterURL.url) { [weak self] data, _, error in
             guard let data else {
                 print(error?.localizedDescription ?? "No error description")
                 return
             }
-            
+
             let decoder = JSONDecoder()
-            
+            decoder.keyDecodingStrategy = .convertFromSnakeCase
+
             do {
                 let swInfo = try decoder.decode(StarWarsCharactersInfo.self, from: data)
                 self?.characters = swInfo.results

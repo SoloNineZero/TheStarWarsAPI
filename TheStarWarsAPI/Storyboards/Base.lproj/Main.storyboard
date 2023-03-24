@@ -1,84 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="w7c-E2-iJi">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="7r3-D6-Y7L">
     <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21507"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Main View Controller-->
-        <scene sceneID="tne-QT-ifu">
-            <objects>
-                <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="TheStarWarsAPI" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="9oZ-Du-Gte">
-                                <rect key="frame" x="20" y="572" width="335" height="126"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v76-hs-KNy">
-                                        <rect key="frame" x="0.0" y="0.0" width="335" height="48"/>
-                                        <color key="backgroundColor" red="1" green="0.91389876599999997" blue="0.1765266657" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
-                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                        <state key="normal" title="Character">
-                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="CornerRadius">
-                                                <integer key="value" value="10"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                        <connections>
-                                            <segue destination="7r3-D6-Y7L" kind="show" identifier="showCharacter" id="gBk-pN-3cK"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dQg-yz-WyN">
-                                        <rect key="frame" x="0.0" y="78" width="335" height="48"/>
-                                        <color key="backgroundColor" red="1" green="0.91389876599999997" blue="0.1765266657" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
-                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                        <state key="normal" title="Starship">
-                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="CornerRadius">
-                                                <integer key="value" value="10"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                        <connections>
-                                            <segue destination="7r3-D6-Y7L" kind="show" identifier="showStarship" id="1to-Rn-LoS"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                            </stackView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="GS3-0O-Zkg">
-                                <rect key="frame" x="20" y="118.33333333333331" width="335" height="335"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="GS3-0O-Zkg" secondAttribute="height" multiplier="1:1" id="iAp-cv-equ"/>
-                                </constraints>
-                            </imageView>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="GS3-0O-Zkg" secondAttribute="trailing" constant="20" id="5iH-N5-E54"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="9oZ-Du-Gte" secondAttribute="trailing" constant="20" id="5my-OI-xVa"/>
-                            <constraint firstItem="GS3-0O-Zkg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="6rE-yo-i5I"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="9oZ-Du-Gte" secondAttribute="bottom" constant="80" id="QtL-A4-RGU"/>
-                            <constraint firstItem="9oZ-Du-Gte" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="WTj-b4-xYT"/>
-                            <constraint firstItem="GS3-0O-Zkg" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" multiplier="1.3" id="su4-Oz-9SW"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" id="Khh-Vz-nQp"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1060" y="-2.2167487684729066"/>
-        </scene>
         <!--Info Table View Controller-->
         <scene sceneID="kIN-10-7aF">
             <objects>
@@ -102,7 +30,7 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="descriptionLabel" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="izn-5l-hk3">
-                                            <rect key="frame" x="30" y="45" width="325" height="177"/>
+                                            <rect key="frame" x="40" y="45" width="315" height="177"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -115,7 +43,7 @@
                                         <constraint firstItem="izn-5l-hk3" firstAttribute="trailing" secondItem="nLL-ly-fch" secondAttribute="trailingMargin" id="Po6-AC-7Xv"/>
                                         <constraint firstItem="YwO-zb-H2n" firstAttribute="top" secondItem="nLL-ly-fch" secondAttribute="topMargin" id="bVd-fG-D2s"/>
                                         <constraint firstItem="YwO-zb-H2n" firstAttribute="leading" secondItem="nLL-ly-fch" secondAttribute="leadingMargin" id="hgA-wR-j1M"/>
-                                        <constraint firstItem="izn-5l-hk3" firstAttribute="leading" secondItem="nLL-ly-fch" secondAttribute="leadingMargin" constant="10" id="mB6-PB-W5k"/>
+                                        <constraint firstItem="izn-5l-hk3" firstAttribute="leading" secondItem="nLL-ly-fch" secondAttribute="leadingMargin" constant="20" id="mB6-PB-W5k"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" red="0.9984300733" green="0.91381472350000004" blue="0.17648160460000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -134,30 +62,9 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8qt-OT-piS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2007.2" y="-2.2167487684729066"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="XwK-dA-lTp">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="w7c-E2-iJi" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="PRU-3O-3QK">
-                        <rect key="frame" x="0.0" y="47" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="sR7-2P-Ft7"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="bq0-Jk-4kn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="117.59999999999999" y="-2.2167487684729066"/>
+            <point key="canvasLocation" x="1084" y="-2"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="1to-Rn-LoS"/>
-    </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
