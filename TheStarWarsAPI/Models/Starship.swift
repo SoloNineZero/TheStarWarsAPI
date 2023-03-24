@@ -12,6 +12,14 @@ struct Starship: Codable {
     let model: String
     let manufacturer: String
     let costInCredits: String
+    
+    var description: String {
+        return """
+            model: \(model)
+            manufacturer: \(manufacturer)
+            cost in credits: \(costInCredits)
+            """
+    }
 }
 
 struct StarWarsStarshipInfo: Decodable {

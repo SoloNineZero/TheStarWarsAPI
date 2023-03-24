@@ -7,10 +7,16 @@
 
 import UIKit
 
-class InfoTableViewCell: UITableViewCell {
+class CharacterTableViewCell: UITableViewCell {
 
     @IBOutlet var nameLabel: UILabel!
     @IBOutlet var descriptionLabel: UILabel!
+    
+    @IBOutlet var cellView: UIView! {
+        didSet {
+            cellView.layer.cornerRadius = 10
+        }
+    }
     
     func configure(with character: Character) {
         nameLabel.text = character.name

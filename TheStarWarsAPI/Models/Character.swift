@@ -14,6 +14,7 @@ struct Character: Decodable {
     let hairColor: String
     let eyeColor: String
     let gender: String
+    let starships: [String]
 
     var description: String {
         return """

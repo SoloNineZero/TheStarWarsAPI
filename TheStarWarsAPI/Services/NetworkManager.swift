@@ -40,6 +40,7 @@ final class NetworkManager {
             }
             
             let decoder = JSONDecoder()
+            decoder.keyDecodingStrategy = .convertFromSnakeCase
             
             do {
                 let dataModel = try decoder.decode(T.self, from: data)
@@ -50,6 +51,5 @@ final class NetworkManager {
                 completion(.failure(.decoding))
             }
         }.resume()
-        
     }
 }
