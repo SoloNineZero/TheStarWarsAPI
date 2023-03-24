@@ -10,7 +10,6 @@ import UIKit
 class CharacterTableViewCell: UITableViewCell {
 
     @IBOutlet var nameLabel: UILabel!
-    @IBOutlet var descriptionLabel: UILabel!
     
     @IBOutlet var cellView: UIView! {
         didSet {
@@ -20,7 +19,6 @@ class CharacterTableViewCell: UITableViewCell {
     
     func configure(with character: Character) {
         nameLabel.text = character.name
-        descriptionLabel.text = character.description
     }
 
 }

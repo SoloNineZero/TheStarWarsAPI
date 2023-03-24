@@ -9,14 +9,11 @@ import Foundation
 
 enum Link {
     case apiCharacterURL
-    case apiStarshipURL
     
     var url: URL {
         switch self {
         case .apiCharacterURL:
             return URL(string: "https://swapi.dev/api/people/")!
-        case .apiStarshipURL:
-            return URL(string: "https://swapi.dev/api/starships/")!
         }
     }
 }

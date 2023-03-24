@@ -11,15 +11,14 @@ final class CharacterTableViewController: UITableViewController {
 
     private var characters: [Character] = []
     private let networkManager = NetworkManager.shared
-    
+
+    // MARK: - Override functions
     override func viewDidLoad() {
         super.viewDidLoad()
         fetchCharacter()
-        
-        title = "Star Wars Characters"
+        title = "Star Wars"
     }
 
-    // MARK: - Table view data source
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         characters.count
     }
@@ -31,6 +30,12 @@ final class CharacterTableViewController: UITableViewController {
         cell.configure(with: character)
 
         return cell
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let infoVC = segue.destination as? InfoViewController else { return }
+        guard let index = tableView.indexPathForSelectedRow else { return }
+        infoVC.character = characters[index.row]
     }
 }
 //MARK: - Private functions

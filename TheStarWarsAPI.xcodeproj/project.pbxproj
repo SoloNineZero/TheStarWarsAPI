@@ -14,11 +14,9 @@
 		A85B993D29CC9AFD000073DA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A85B993B29CC9AFD000073DA /* LaunchScreen.storyboard */; };
 		A8B8B29A29CC9B82004FAB3D /* CharacterTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B8B29929CC9B82004FAB3D /* CharacterTableViewController.swift */; };
 		A8B8B29D29CC9C8B004FAB3D /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B8B29C29CC9C8B004FAB3D /* Character.swift */; };
-		A8B8B29F29CC9C9D004FAB3D /* Starship.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B8B29E29CC9C9D004FAB3D /* Starship.swift */; };
 		A8B8B2A229CCA30B004FAB3D /* CharacterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B8B2A129CCA30B004FAB3D /* CharacterTableViewCell.swift */; };
 		A8B8B2A629CD608D004FAB3D /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B8B2A529CD608D004FAB3D /* NetworkManager.swift */; };
-		A8DF26FD29CDA784001691E4 /* StarshipTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8DF26FC29CDA784001691E4 /* StarshipTableViewController.swift */; };
-		A8DF26FF29CDA8F8001691E4 /* StarshipTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8DF26FE29CDA8F8001691E4 /* StarshipTableViewCell.swift */; };
+		A8DF270129CDB046001691E4 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8DF270029CDB046001691E4 /* InfoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,11 +29,9 @@
 		A85B993E29CC9AFD000073DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A8B8B29929CC9B82004FAB3D /* CharacterTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterTableViewController.swift; sourceTree = "<group>"; };
 		A8B8B29C29CC9C8B004FAB3D /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
-		A8B8B29E29CC9C9D004FAB3D /* Starship.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Starship.swift; sourceTree = "<group>"; };
 		A8B8B2A129CCA30B004FAB3D /* CharacterTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterTableViewCell.swift; sourceTree = "<group>"; };
 		A8B8B2A529CD608D004FAB3D /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
-		A8DF26FC29CDA784001691E4 /* StarshipTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarshipTableViewController.swift; sourceTree = "<group>"; };
-		A8DF26FE29CDA8F8001691E4 /* StarshipTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarshipTableViewCell.swift; sourceTree = "<group>"; };
+		A8DF270029CDB046001691E4 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,7 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				A8B8B29929CC9B82004FAB3D /* CharacterTableViewController.swift */,
-				A8DF26FC29CDA784001691E4 /* StarshipTableViewController.swift */,
+				A8DF270029CDB046001691E4 /* InfoViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -111,7 +107,6 @@
 			isa = PBXGroup;
 			children = (
 				A8B8B29C29CC9C8B004FAB3D /* Character.swift */,
-				A8B8B29E29CC9C9D004FAB3D /* Starship.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -120,7 +115,6 @@
 			isa = PBXGroup;
 			children = (
 				A8B8B2A129CCA30B004FAB3D /* CharacterTableViewCell.swift */,
-				A8DF26FE29CDA8F8001691E4 /* StarshipTableViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -214,12 +208,10 @@
 			files = (
 				A85B993129CC9AFC000073DA /* AppDelegate.swift in Sources */,
 				A8B8B29D29CC9C8B004FAB3D /* Character.swift in Sources */,
-				A8B8B29F29CC9C9D004FAB3D /* Starship.swift in Sources */,
-				A8DF26FD29CDA784001691E4 /* StarshipTableViewController.swift in Sources */,
 				A8B8B2A629CD608D004FAB3D /* NetworkManager.swift in Sources */,
-				A8DF26FF29CDA8F8001691E4 /* StarshipTableViewCell.swift in Sources */,
 				A8B8B2A229CCA30B004FAB3D /* CharacterTableViewCell.swift in Sources */,
 				A85B993329CC9AFC000073DA /* SceneDelegate.swift in Sources */,
+				A8DF270129CDB046001691E4 /* InfoViewController.swift in Sources */,
 				A8B8B29A29CC9B82004FAB3D /* CharacterTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

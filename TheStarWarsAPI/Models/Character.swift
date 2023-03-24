@@ -13,8 +13,9 @@ struct Character: Decodable {
     let mass: String
     let hairColor: String
     let eyeColor: String
+    let birthYear: String
     let gender: String
-    let starships: [String]
+    let homeworld: String
 
     var description: String {
         return """
@@ -22,6 +23,7 @@ struct Character: Decodable {
             mass: \(mass)
             hair color: \(hairColor)
             eye color: \(eyeColor)
+            birth year: \(birthYear)
             gender: \(gender)
             """
     }
