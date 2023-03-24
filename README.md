@@ -1,7 +1,8 @@
 # TheStarWarsAPI
 
 Проект реализован с использованием схемы MVC и с использованием сетевого слоя.
-продолжение [проекта](https://github.com/SoloNineZero/HW-3.2)
+
+[Продолжение проекта](https://github.com/SoloNineZero/HW-3.2)
 
 [Используемый API](https://swapi.dev/documentation)
 

@@ -8,7 +8,8 @@
 import UIKit
 
 final class CharacterTableViewController: UITableViewController {
-
+    
+    //MARK: - Private properties
     private var characters: [Character] = []
     private let networkManager = NetworkManager.shared
 
