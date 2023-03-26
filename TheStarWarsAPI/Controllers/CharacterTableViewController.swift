@@ -42,13 +42,13 @@ final class CharacterTableViewController: UITableViewController {
 //MARK: - Private functions
 extension CharacterTableViewController {
     private func fetchCharacter() {
-        networkManager.fetch(StarWarsCharactersInfo.self, from: Link.apiCharacterURL.url) { [weak self] result in
+        networkManager.fetchCharacters(from: Link.apiCharacterURL.url) { [weak self] result in
             switch result {
             case .success(let characters):
-                self?.characters = characters.results
+                self?.characters = characters
                 self?.tableView.reloadData()
             case .failure(let error):
-                print(error)
+                print(error.localizedDescription)
             }
         }
     }
