@@ -15,7 +15,7 @@
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="5Pi-XB-94f">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemTealColor"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="characterCell" rowHeight="100" id="wrC-2P-7Vf" customClass="CharacterTableViewCell" customModule="TheStarWarsAPI" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="50" width="375" height="100"/>
@@ -64,7 +64,13 @@
                             <outlet property="delegate" destination="7r3-D6-Y7L" id="Dkd-f2-TZr"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="3Bj-LB-xLl"/>
+                    <navigationItem key="navigationItem" id="3Bj-LB-xLl">
+                        <barButtonItem key="rightBarButtonItem" title="Item" id="0My-nw-9gt">
+                            <connections>
+                                <action selector="reload:" destination="7r3-D6-Y7L" id="S9S-iM-TQZ"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8qt-OT-piS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -105,7 +111,6 @@
         <!--Navigation Controller-->
         <scene sceneID="Jjb-nY-nIa">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="bQa-Ed-Avj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="jET-HO-nVf" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="aas-Ir-ZRf">
@@ -120,6 +125,7 @@
                         <segue destination="7r3-D6-Y7L" kind="relationship" relationship="rootViewController" id="ZQ7-E1-ryC"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bQa-Ed-Avj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2159.1999999999998" y="-2.2167487684729066"/>
         </scene>
@@ -127,9 +133,6 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemTealColor">
-            <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

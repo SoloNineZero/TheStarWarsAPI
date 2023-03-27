@@ -10,11 +10,14 @@ import Alamofire
 
 enum Link {
     case apiCharacterURL
+    case coursesURL
     
     var url: URL {
         switch self {
         case .apiCharacterURL:
             return URL(string: "https://swapi.dev/api/people/")!
+        case .coursesURL:
+            return URL(string: "https://swiftbook.ru//wp-content/uploads/api/api_courses")!
         }
     }
 }
@@ -50,18 +53,32 @@ final class NetworkManager {
 //            }
 //        }.resume()
 //    }
-    func fetchCharacters(from url: URL, completion: @escaping(Result<[Character], AFError>) -> Void) {
+    func fetchCharacters(from url: URL, completion: @escaping(Result<[StarWarsCharactersInfo], AFError>) -> Void) {
         AF.request(url)
             .validate()
             .responseJSON { dataResponse in
                 switch dataResponse.result {
                 case .success(let value):
-                    let characters = Character.getCharacter(from: value)
-                    completion(.success(characters))
+                    let results = StarWarsCharactersInfo.getStarWars(from: value)
+                    completion(.success(results))
                 case .failure(let error):
                     completion(.failure(error))
                 }
             }
     }
+    
+//    func fetchCharacter(from url: URL, completion: @escaping(Result<[Character], AFError>) -> Void) {
+//        AF.request(url)
+//            .validate()
+//            .responseJSON { dataResponse in
+//                switch dataResponse.result {
+//                case .success(let value):
+//                    let results = Character.getCharacter(from: value)
+//                    completion(.success(results))
+//                case .failure(let error):
+//                    completion(.failure(error))
+//                }
+//            }
+//    }
     
 }

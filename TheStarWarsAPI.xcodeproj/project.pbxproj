@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A8572BF029D1E08600934FB6 /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8572BEF29D1E08600934FB6 /* Course.swift */; };
 		A85B993129CC9AFC000073DA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85B993029CC9AFC000073DA /* AppDelegate.swift */; };
 		A85B993329CC9AFC000073DA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85B993229CC9AFC000073DA /* SceneDelegate.swift */; };
 		A85B993829CC9AFC000073DA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A85B993629CC9AFC000073DA /* Main.storyboard */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A8572BEF29D1E08600934FB6 /* Course.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
 		A85B992D29CC9AFC000073DA /* TheStarWarsAPI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheStarWarsAPI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A85B993029CC9AFC000073DA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A85B993229CC9AFC000073DA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -109,6 +111,7 @@
 			isa = PBXGroup;
 			children = (
 				A8B8B29C29CC9C8B004FAB3D /* Character.swift */,
+				A8572BEF29D1E08600934FB6 /* Course.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -214,6 +217,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8572BF029D1E08600934FB6 /* Course.swift in Sources */,
 				A85B993129CC9AFC000073DA /* AppDelegate.swift in Sources */,
 				A8B8B29D29CC9C8B004FAB3D /* Character.swift in Sources */,
 				A8B8B2A629CD608D004FAB3D /* NetworkManager.swift in Sources */,

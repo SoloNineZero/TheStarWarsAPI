@@ -11,28 +11,28 @@ struct Character: Decodable {
     let name: String
     let height: String
     let mass: String
-    let hairColor: String
-    let eyeColor: String
-    let birthYear: String
+//    let hairColor: String
+//    let eyeColor: String
+//    let birthYear: String
     let gender: String
     
-    init(name: String, height: String, mass: String, hairColor: String, eyeColor: String, birthYear: String, gender: String) {
-        self.name = name
-        self.height = height
-        self.mass = mass
-        self.hairColor = hairColor
-        self.eyeColor = eyeColor
-        self.birthYear = birthYear
-        self.gender = gender
-    }
+//    init(name: String, height: String, mass: String, hairColor: String, eyeColor: String, birthYear: String, gender: String) {
+//        self.name = name
+//        self.height = height
+//        self.mass = mass
+//        self.hairColor = hairColor
+//        self.eyeColor = eyeColor
+//        self.birthYear = birthYear
+//        self.gender = gender
+//    }
     
     init(characterData: [String: Any]) {
         name = characterData["name"] as? String ?? ""
         height = characterData["height"] as? String ?? ""
         mass = characterData["mass"] as? String ?? ""
-        hairColor = characterData["hairColor"] as? String ?? ""
-        eyeColor = characterData["eyeColor"] as? String ?? ""
-        birthYear = characterData["birthYear"] as? String ?? ""
+//        hairColor = characterData["hairColor"] as? String ?? ""
+//        eyeColor = characterData["eyeColor"] as? String ?? ""
+//        birthYear = characterData["birthYear"] as? String ?? ""
         gender = characterData["gender"] as? String ?? ""
     }
     
@@ -45,9 +45,6 @@ struct Character: Decodable {
         return """
             height: \(height)
             mass: \(mass)
-            hair color: \(hairColor)
-            eye color: \(eyeColor)
-            birth year: \(birthYear)
             gender: \(gender)
             """
     }
@@ -55,4 +52,15 @@ struct Character: Decodable {
 
 struct StarWarsCharactersInfo: Decodable {
     let results: [Character]
+    
+    
+    init(StarWarsData: [String: Any]) {
+        results = StarWarsData["results"] as? [Character] ?? []
+    }
+    
+    static func getStarWars(from value: Any) -> StarWarsCharactersInfo {
+        guard let starWarsData = value as? [String: Any] else { return [:] }
+        return StarWarsCharactersInfo(StarWarsData: starWarsData)
+//        return starWars.map { StarWarsCharactersInfo(StarWarsData: $0) }
+    }
 }
